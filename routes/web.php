@@ -37,9 +37,9 @@ Route::get('/there', function () {
 Route::view('/welcome', 'welcome');
 Route::view('/welcome', 'welcome', ['name' => 'Fahmi']);
 
-// Route::get('user/{name?}', function ($name = null){
-//     return $name;
-// });
+Route::get('user/{name?}', function ($name = null){
+    return $name;
+});
 Route::get('user/{name?}', function ($name = 'Jhon'){
     return $name;
 });
